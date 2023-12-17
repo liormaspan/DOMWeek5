@@ -1,0 +1,48 @@
+body{
+	background-color: darkgrey;
+}
+
+#grid-container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: gray;
+    width: 20%;
+    height: 97vh;    
+    float: left;
+    padding: 5px;
+    
+}
+
+#main{
+display: grid;
+grid-template-columns: repeat(20, 1fr);
+background-color: grey;
+height: 97vh;
+padding: 5px;
+
+}
+#grid-container > * {
+	border: 1px black solid;
+}
+
+#main > * {
+	border: 1px lightgray solid;
+	background-color: white;
+}
+
+button {
+	grid-column: 1/4; 
+	background-color: whitesmoke;
+	border: none;
+	border-radius: 8px;
+	color:black;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 22px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
